@@ -1,0 +1,48 @@
+    <!-- Gallery Section -->
+    <section id="gallery" class="container content-section text-center">
+      <div class="row">
+          <h1>4K Video Understanding</h1>
+          <p>Some of the fantastic results are shown here. The model can produce detailed captions for the vidoes. </p>
+          <div class="col-md-12 ">
+            <div class="d-flex justify-content-center">
+              <div id="inline-video-gallery-container" class="inline-gallery-container"></div>
+            </div>
+          </div>
+      <!-- see here for how you would use this gallery: https://codepen.io/sachinchoolur/pen/ExXxqPe -->
+      </div>
+      <p>
+        <h1>More Captioning Gallery!</h1>
+      </p>
+      <p>More on the Generated Captions. These are videos from the Inter-4k dataset. Click on the video to see the detailed captioning.</p>
+      <div class="container-fluid " id="gallery-container">
+        {% for info in site.gallery %}
+        <a data-lg-size="1920-1280" 
+          data-pinterest-text="Pin it3"
+          data-tweet-text="lightGallery slide 4"
+          data-src="{{ info.url }}"
+          data-poster="{{ info.img_url }}"
+          data-sub-html="<h4>Caption</h4><p>{{ info.caption }}</p>">
+          <img class="img-responsive col-lg-3 video-gallery-item" src="{{ info.img_url }}" />
+        </a>
+        {% endfor %}
+      </div>
+
+      <div class="col-lg-12">
+        <p>
+          <h1>Results Gallery!</h1>
+        </p>
+        <p>
+          We've made all our results open-sourced, you can find all caption results on the Inter-4k dataset here. Pick a variant and slide through to 
+          have a sense on what our PLAVA are capable of!
+        </p>
+        <div class="iframe-wrapper">
+          <iframe
+          src="https://ermu2001-inter4kpllavarecaption.hf.space"
+          frameborder="0"
+          width="850"
+          height="450"
+        ></iframe>
+        </div>   
+      </div>
+
+  </section>

@@ -1,0 +1,70 @@
+    <!-- Contact Section -->
+    <section id="information" class="content-section text-center">
+        <div class="white-content-section row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <h2>Recaptioning Inter4k</h2>
+                <img id="teaser" width="75%" src="img/caption.jpg">
+                <p class="detail">                       
+                    Finnally, We used PLLAVA-34B to produce caption for entire Inter-4k dataset with both English and Chinese. The dataset contains 1k high resolution 
+                    video with caption generated with our best model. You can checkout the results in the gallery gradio. If you find our dataset useful.
+                    Feel free to directly donwload the released recaptioning dataset in our huggingface dataset repo. The results are demonstrated comparing to using image based models
+                    for video captioning.
+                    Using Video Large Language Model would improve on the motion description of the captioning.
+                </p>
+                <p>
+                    <a href="https://huggingface.co/datasets/ermu2001/Inter4kPLLAVARecaption" class="btn btn-default btn-lg">Recaptioning Huggingface Dataset</a>
+                </p>
+            </div>
+        </div>
+        <div class="content-section row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br>
+                <h2>Run or Deploy</h2>
+                <p class="detail">
+                    We've released all the source code for PLLAVA.
+                    If you find our model powerful feel free to visit our github repo and set up your local PLLAVA and play around.
+
+                </p>
+                <p>
+                    <a href="https://github.com/magic-research/PLLaVA" class="btn btn-default btn-lg">Visit Github Repo</a>
+                </p>
+                <p>
+                    <a href="https://huggingface.co/ermu2001/pllava-34b" class="btn btn-default btn-lg">34b Model</a>
+                    <a href="https://huggingface.co/ermu2001/pllava-13b" class="btn btn-default btn-lg">13b Model</a>
+                    <a href="https://huggingface.co/ermu2001/pllava-7b" class="btn btn-default btn-lg">7b Model</a>
+                </p>
+            </div>
+        </div>
+        <div class="information-section row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <br>
+                <h2>Contact</h2>
+                <p>If you got any interesting idea, feel free to reach out to us!</p>
+                {% for email in site.email %}
+                    <p>
+                        <a href="mailto:{{ email }}" style="color:aqua;">{{ email }}</a>
+                    </p>
+                {% endfor %}
+                </p>
+
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                        <li>
+                            <a href="{{ network.url }}" class="btn btn-default btn-lg">
+                                <i class="fa fa-{{ network.type }} fa-fw"></i>
+                                <span class="network-name">{{ network.name }}</span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <!--                 
+                <ul class="list-inline banner-social-buttons">
+                    {% for network in site.social %}
+                    <li>
+                        <a href="{{ network.url }}" class="btn btn-default btn-lg"><i class="fa fa-{{ network.title }} fa-fw"></i> <span class="network-name">{{ network.title }}</span></a>
+                    </li>
+                    {% endfor %}
+                </ul> -->
+            </div>
+        </div>
+    </section>

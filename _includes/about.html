@@ -1,0 +1,45 @@
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+        <div class="about-section">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h2>About PLAVA</h2>
+                    <p>
+                        We intended to construct a video assistant that can do captioning, detailed video reasoning and so much beyond.
+                        With a simple yet powerful pooling module design. We mange to <b>bridge</b> a Image Finetuned Vision-LLM towards on par ability regarding the video modality 
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 block" style="padding-top: 50px;">
+                <h4>Abstract</h4>
+                <p class="detail">
+                    Vision-language pre-training (VLP) has significantly elevated performance across a range of vision-language applications. 
+                    Yet, the pre-training process for video-related tasks demands an exceptionally high degree of computational and data resources.
+                    This paper investigates a straightforward, highly efficient, and resource-light approach to adapting an existing image-language pre-training model for video data. 
+                    Our preliminary experiments reveal that directly fine-tuning pre-trained image-language models with multiple frames on video datasets leads to performance saturation or even a drop in caption-related tasks. Besides, it is also vulnerable to prompts and tends to provide short descriptions. We conducted a deep analysis and observed that the performance saturation and the vulnerability might be related to the dominant patches that exist in some single video patches. 
+                    We then propose a simple pooling strategy to smooth the feature distribution along the temporal dimension and thus reduce the dominant impacts from some extreme tokens. The new model is termed Pooling LLaVA, or PLLaVA in short. With the proposed pooling strategy, we achieve new state-of-the-art performance on all evaluated datasets. Notably, on the recent popular Video ChatGPT benchmark, PLLaVA achieves a score of 3.48 out of 5 on average of five evaluated dimensions, which is the new state-of-the-art score on the leaderboard and is 0.31 higher than the previous SOTA results from GPT4V (IG-VLM). On the latest multi-choice benchmark MVBench, PLLaVA achieves 58.1% accuracy on average across 20 sub-tasks, which is the new state-of-the-art result and is 14.5% higher than GPT4V (IG-VLM). 
+                </p>
+                <img id="teaser" width="75%" src="img/framework.png">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 block" style="padding-top: 50px;">
+                <h4>Searching for Optilal Pooling Strategy</h4>
+                <p class="detail" > 
+                    There are two dimensions for the pooling strategy: spatial dimension and the temporal dimension. We emperically found that reducing the spatial dimension with larger temporal dimension could lead to better 
+                    model perfromance, compared to reducing the temporal dimension directly.
+                </p>
+                <img id="teaser" width="50%" src="img/pooling_ablation.png">  
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2" style="padding-top: 50px;">
+                <h4>State-of-the-art Performance</h4>
+                <p class="detail" >We compare the performance of PLAVA with recent popular methods over both question-qnswer and captioning datasets. The results are shown below.</p>
+                <img id="teaser" width="75%" src="img/results.png">  
+            </div>
+        </div>
+    </section>
+    

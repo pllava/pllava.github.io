@@ -1,0 +1,133 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# github
+lsi: false
+safe: true
+source: .
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
+permalink: pretty
+markdown: kramdown
+
+title: "PLLaVA: Parameter-free LLaVA Extension from Images to Videos for Video Dense Captioning"
+email: ["zhoudaquan21@gmail.com", "cathyxl2016@gmail.com", "ermuzzz2001@gmail.com"]
+social: 
+  - url: https://twitter.com/Lin_Xu_
+    name: lin
+    type: twitter
+
+  - url: https://twitter.com/ermu2001
+    name: yilin
+    type: twitter
+
+
+description: >- # this means to ignore newlines until "baseurl:"
+  A video assistant. <br>With imagenary captioning ability. <br>
+  See our PLAVA in the Pool →
+# baseurl: "" # the subpath of your site, e.g. /blog
+# baseurl: "/test.io" # the subpath of your site, e.g. /blog
+# url: "" # the base hostname & protocol for your site, e.g. http://example.com
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+gallery:
+  - caption: "The video depicts an indoor basketball game in progress. The court is filled with players, some of whom are actively engaged in the game, while others are waiting for their turn or observing the ongoing play. The players are dressed in athletic attire, and the court is marked with the standard lines and markings for a basketball game.\n\nIn the background, there is a crowd of spectators watching the game, indicating that this is a public event or competition. The audience appears to be focused on the game, suggesting that the event is of interest to them.\n\nThe actions in the video include players running, passing the ball, and shooting at the basket. The players are demonstrating various skills and strategies, such as dribbling, passing, and shooting, which are typical of a basketball game. The overall atmosphere of the video suggests a competitive and energetic environment, with the players and spectators alike invested in the outcome of the game."
+    url: "https://www.youtube.com/watch?v=-sZL9OoO9c4"
+    img_url: "https://img.youtube.com/vi/-sZL9OoO9c4/mqdefault.jpg"
+
+  - caption: "In the video, a woman with long black hair is standing on a wooden pier. She is wearing a white shirt and has a watch on her left wrist. The woman is looking out towards the ocean, which is visible in the background. The sky is clear and blue, suggesting that it is a sunny day. The pier is made of wood and has a railing on one side. There are no other people visible in the video. The woman appears to be alone on the pier, enjoying the view of the ocean."
+    url: "https://www.youtube.com/watch?v=nASHxrFOAxk"
+    img_url: "https://img.youtube.com/vi/nASHxrFOAxk/mqdefault.jpg"
+
+  - caption: "The video shows a man riding a bicycle on a ramp at a skate park. He is wearing a black shirt and a baseball cap. The man is performing a trick on the ramp, which is made of wood and has a black and yellow design. The ramp is located in a park with trees in the background. There are other people in the background, but they are not the main focus of the video. The man on the bicycle is the main character in the video"
+    url: "https://www.youtube.com/watch?v=U1UiNORV4Go"
+    img_url: "https://img.youtube.com/vi/U1UiNORV4Go/mqdefault.jpg"
+
+  - caption: "The video depicts a serene coastal scene at sunset. The main focus is a lighthouse standing on a rocky outcrop, with the vast expanse of the ocean stretching out in the background. The sky is painted with hues of blue and orange, indicating the time of day. The lighthouse appears to be a prominent landmark, possibly serving as a guide for ships navigating the waters. The overall atmosphere of the video is calm and peaceful, with no visible characters or actions taking place. The lighthouse, the ocean, and the sunset create a picturesque and tranquil setting."
+    url: "https://www.youtube.com/watch?v=fleiAgXij9w"
+    img_url: "https://img.youtube.com/vi/fleiAgXij9w/mqdefault.jpg"
+    
+  - caption: "The video depicts a dynamic scene of a surfer riding a wave. The surfer, dressed in a wetsuit, is skillfully maneuvering on a surfboard, which is prominently visible in the foreground. The surfer is positioned in the center of the frame, with the wave forming a powerful backdrop. The wave is large and appears to be breaking, creating a dramatic and energetic atmosphere. The surfer's actions suggest that they are in the midst of a thrilling ride, skillfully navigating the powerful force of the ocean. The overall scene conveys a sense of adventure and excitement, capturing the essence of the surfing experience."
+    url: "https://www.youtube.com/watch?v=e4NpgP9F6ew"
+    img_url: "https://img.youtube.com/vi/e4NpgP9F6ew/mqdefault.jpg"
+    
+  - caption: "The video features a cat sitting in a garden setting. The cat appears to be looking at something off-camera, possibly a snail, as suggested by the presence of a snail shell in the background. The garden is lush with various plants and rocks, creating a natural and serene environment. The cat's attention seems to be focused on the snail, indicating curiosity or interest in the creature. The overall scene is peaceful and calm, with the cat being the main character in this setting."
+    url: "https://www.youtube.com/watch?v=DJw5ZoTq8Bs"
+    img_url: "https://img.youtube.com/vi/DJw5ZoTq8Bs/mqdefault.jpg"
+
+  - caption: "The video shows a tennis match in progress. There are four players on the court, two on each side. The court is blue, and the players are dressed in athletic attire. The players are engaged in a rally, with one player hitting the ball back to the other side. The background features a large stadium with a blue roof, and there are trees visible in the distance. The players are focused on the game, and the atmosphere appears to be competitive."
+    url: "https://www.youtube.com/watch?v=JyPFEZv4x_w"
+    img_url: "https://img.youtube.com/vi/JyPFEZv4x_w/mqdefault.jpg"
+
+  - caption: "The video features a group of musicians performing in a dark room with a reflective floor. The musicians are dressed in red suits and hats, giving them a coordinated and professional appearance. The drummer is seated at the center of the image, holding drumsticks and appears to be in the middle of a performance. To the left of the drummer, there is a trombone player, and to the right, there is a double bass player. The musicians are focused on their instruments and seem to be playing in sync with each other. The overall atmosphere of the video is one of concentration and musical performance."
+    url: "https://www.youtube.com/watch?v=6zYAyBAovW8"
+    img_url: "https://img.youtube.com/vi/6zYAyBAovW8/mqdefault.jpg"
+
+  - caption: "The video depicts a city street scene with a young man walking on the sidewalk. He is wearing glasses and a hoodie, and appears to be in motion, possibly heading towards a destination. The street is lined with parked cars, and there are buildings in the background, suggesting an urban environment. The weather appears to be overcast, and the lighting is subdued. There are no other people visible in the frame, and the focus is primarily on the man walking."
+    url: "https://www.youtube.com/watch?v=DiDCtUnzqbg"
+    img_url: "https://img.youtube.com/vi/DiDCtUnzqbg/mqdefault.jpg"
+
+  - caption: "The video shows a close-up of a person playing a drum set. The background is dark, which highlights the drum set and the drummer's hands. The drummer is wearing a watch on their left wrist. The drum set is made of clear material, and the drummer is using drumsticks to play the drums. The drum set is illuminated by blue and purple lights, which creates a dramatic effect. The drummer is playing the drums with intensity, and the drumsticks are moving quickly. The overall atmosphere of the video is energetic and dynamic."
+    url: "https://www.youtube.com/watch?v=toYn-PP4sXA"
+    img_url: "https://img.youtube.com/vi/toYn-PP4sXA/mqdefault.jpg"
+
+
+  - caption: "The video depicts a picturesque scene of a castle situated on a small island in the middle of a body of water, likely a lake or a calm sea. The castle appears to be of historical significance, with its stone walls and multiple turrets. A bridge connects the island to the mainland, providing access to the castle. The surrounding landscape is lush and green, with mountains visible in the distance, suggesting a serene and peaceful environment. There are no characters or actions visible in the video, as it is a static image capturing the beauty of the castle and its surroundings."
+    url: "https://www.youtube.com/watch?v=YA6lLgCrjXA"
+    img_url: "https://img.youtube.com/vi/YA6lLgCrjXA/mqdefault.jpg"
+
+  - caption: "The video features a woman in a white dress with a large, heart-shaped swan in the background. The woman is standing on the swan and appears to be posing for the camera. The swan is white and has a heart shape, which is a unique and eye-catching design. The woman is the main character in the video and is the focus of the scene. She is standing on the swan and appears to be posing for the camera. The background is not very detailed, but it seems to be an outdoor setting with a clear sky. The woman is the only character in the video and there are no other people or objects in the scene. The actions in the video are limited to the woman posing on the swan and the swan itself not moving. The overall scene is quite simple and the focus is on the woman and the heart-shaped swan."
+    url: "https://www.youtube.com/watch?v=2-bY0ZbMTLk"
+    img_url: "https://img.youtube.com/vi/2-bY0ZbMTLk/mqdefault.jpg"
+
+# https://www.youtube.com/watch?v=guQU2wkFO24&feature=youtu.be
+# https://www.youtube.com/watch?v=1fiGnZfCEBM
+
+footer: "PLLaVA: Parameter-free LLaVA Extension from Images to Videos for Video Dense Captioning"
+time: "Thu Apr 25 15:39:07 EDT 2024"
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
